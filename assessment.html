@@ -4,15 +4,15 @@
     <title>HTML Assessment</title>
   </head>
   <body>
-    <h1>TEXT</h1>
+    <h2>TEXT</h2>
     <div id="first paragraph">
       <p><strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum, orci non fermentum ultrices, ex lectus aliquam massa, eget maximus arcu massa a purus. Nunc mattis mi ante, eu ultrices libero facilisis id. Cras sem massa, maximus id suscipit non, blandit a est. Morbi et luctus sem, volutpat bibendum libero. Sed ut velit ultrices, tempor elit non, venenatis urna. Vestibulum eu blandit enim, a interdum turpis. Duis ullamcorper iaculis cursus.</p>
 
-      <p><strong><em>In rutrum mattis</em></strong> est sit amet pulvinar. Etiam posuere euismod nisi sed pharetra. Fusce vitae dui sem. Donec nec enim sed sapien facilisis lobortis. Curabitur quis consectetur sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur venenatis ex et sem mattis tincidunt. Sed gravida, risus vel volutpat vehicula, elit turpis cursus tortor, nec finibus sapien est sed nulla. Vivamus imperdiet placerat vulputate. Morbi condimentum, augue eu molestie fermentum, mauris nibh convallis risus, eget consequat diam dolor vitae mauris.</p>
+      <p><blockquote><em><strong>Rutrum</strong> mattis est sit amet pulvinar. Etiam posuere euismod nisi sed pharetra. Fusce vitae dui sem. Donec nec enim sed sapien facilisis lobortis. Curabitur quis consectetur sapien. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur venenatis ex et sem mattis tincidunt. Sed gravida, risus vel volutpat vehicula, elit turpis cursus tortor, nec finibus sapien est sed nulla. Vivamus imperdiet placerat vulputate. Morbi condimentum, augue eu molestie fermentum, mauris nibh convallis risus, eget consequat diam dolor vitae mauris.</em></blockquote>
 
       <p><strong>Donec</strong> hendrerit vitae elit in laoreet. Morbi ornare accumsan accumsan. Fusce accumsan auctor velit, ut congue tortor pulvinar id. Suspendisse varius metus a enim faucibus placerat. Ut rutrum felis lacinia velit ornare cursus. Donec vulputate augue sem, at faucibus nibh venenatis non. Sed eget bibendum nisl, vitae hendrerit augue. Ut sagittis augue non rutrum convallis. Nam ultricies lectus vel sollicitudin elementum. Integer turpis urna, tincidunt et dolor quis, dapibus imperdiet sem. Suspendisse ipsum quam, porta vel nulla ut, pretium convallis tortor. Nullam gravida felis eget sodales feugiat. Ut augue tellus, iaculis eget turpis a, placerat euismod purus. Sed vehicula lacus hendrerit erat consequat maximus.</p>
 
-<h1>TABLE</h1>
+<h2>TABLE</h2>
   <table>
     <thead>
       <tr>
@@ -51,18 +51,18 @@
         <td>15</td>
       </tr>
       <tfoot>
-        <td>Total</td>
-        <td>7</td>
-        <td>9</td>
-        <td>3</td>
-        <td>13</td>
-        <td>32</td>
+        <th>Total</th>
+        <th>7</th>
+        <th>9</th>
+        <th>3</th>
+        <th>13</th>
+        <th>32</th>
       </tfoot>
     </tbody>
   </table>
 
 <div id="List">
-<h1>LIST</h1>
+<h2>LIST</h2>
   <ul>
     <li><img src="https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg" alt="Denver Broncos Team Logo" width="148" height="86"></li>
     <a href="https://www.denverbroncos.com/" target="_blank">Denver Broncos</a>
@@ -91,9 +91,56 @@
   </ul>
   </div>
 
-<h1>FORM</h1>
+<h2>FORM</h2>
+<form>
 
+  <label for="First">First:</label>
+  <input type="text" name="First Name" value="Enter First Name" id="First">
+  <label for="Last">Last:</label>
+  <input type="text" name="Last Name" value="Enter Last Name"id="Last">
+  <br>
+  <section>
+    <br>
+      <label for="Favorite">Favorite Sport:</label><br>
+      <select id="Favorite" name="Favorite Sport">
+        <option value="Basketball">Basketball</option>
+        <option value="Football">Football</option>
+        <option value="Baseball">Baseball</option>
+        <option value="Hockey">Hockey</option>
+        <option value="Tennis">Tennis</option>
+        <option value="Racing">Racing</option>
+        <option value="Mixed Martial Arts">Mixed Martial Arts</option>
+      </select>
 
+  </section>
+        <section>
+          <br>
+          I have:
+          <input type="checkbox" name="participation" value="Attended" id="Attended">
+          <label for="Attended">Attended</label>
+          <input type="checkbox" name="participation" value="Played" id="Played">
+          <label for="Played">Played</label>
+          <input type="checkbox" name="participation" value="Coached" id="Coached">
+          <label for="Coached">Coached</label>
+          <input type="checkbox" name="participation" value="Bet On" id="Bet">
+          <label for="Bet">Bet on</label>
+          <br>this sport.
+       </section>
+        <section>
+          <br>
+          For this sport I prefer the:
+          <input type="radio" name="preference" value="Amateur" id="Amateur">
+          <label for="Amateur">Amateur</label>
+          <input type="radio" name="preference" value="College" id="College">
+          <label for="College">College</label>
+          <input type="radio" name="preference" value="Professional" id="Professional">
+          <label for="Professional">Professional</label>
+        </section>
+        <br>
+        <input type="submit"value="Submit Query">
+</form>
+
+<br><br><br><br><br><br>
     </div>
   </body>
 </html>
